@@ -12,26 +12,25 @@ public class B_task {
         this.text = te.text;
     }
 
-    public B_task(String te){
-        this.text = te;
+    public B_task(String text){
+        this.text = text;
     }
 
-    public void Setter(String str){
-        this.text = str;
+    public void setStr(String text){
+        this.text = text;
     }
 
-    public String Getter(){
+    public String getStr(){
         return this.text;
     }
 
-    public void counter(){
+    public byte counter(){
         byte number_str = 0;
         for (int i = 0; i < this.text.length(); i++){
             if (this.text.charAt(i) == '.' || this.text.charAt(i) == '!' || this.text.charAt(i) == '?') {
                 number_str++;
             }
         }
-        if (number_str != 0) System.out.print("Кол-во предложений в тексте: " + number_str + "\n");
-        else System.out.print("Предложений нет \n");
+        return number_str;
     }
 }

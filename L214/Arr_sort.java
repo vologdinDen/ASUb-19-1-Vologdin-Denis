@@ -1,12 +1,12 @@
 package L214;
 
-public class A_task {
+public class Arr_sort {
 
 
     private String [][] enter_arr;
 
-    public A_task(String enter){
-        String[] enter_pre_arr = enter.split(" ");
+    public Arr_sort(String enter_str){
+        String[] enter_pre_arr = enter_str.split(" ");
         this.enter_arr = new String[2][enter_pre_arr.length];
         for (byte i = 0; i < enter_pre_arr.length; i ++){
             this.enter_arr[0][i] = enter_pre_arr[i];
@@ -15,23 +15,23 @@ public class A_task {
 
     }
 
-    public A_task(A_task cop){
+    public Arr_sort(Arr_sort cop){
         this.enter_arr = cop.enter_arr;
     }
 
-    public A_task(){
-        this.enter_arr = new String[2][10];
-        this.enter_arr[0][1] = "Test";
-        this.enter_arr[0][2] = "string";
-        this.enter_arr[1][1] = "4";
-        this.enter_arr[1][2] = "6";
+    public Arr_sort(){
+        this.enter_arr = new String[2][2];
+        this.enter_arr[0][0] = "Test";
+        this.enter_arr[0][1] = "string";
+        this.enter_arr[1][0] = "4";
+        this.enter_arr[1][1] = "6";
     }
 
-    public void Setter(String [][] str){
+    public void setArr(String [][] str){
         this.enter_arr = str;
     }
 
-    public String [][] Getter(){
+    public String [][] getArr(){
         return this.enter_arr;
     }
 
