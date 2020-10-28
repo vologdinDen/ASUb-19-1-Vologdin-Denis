@@ -53,9 +53,14 @@ public class Arr_sort_3 {
                 }
             }
         }
-        System.out.print("Слова отсортированные по их длине: ");
-        for (byte i = 0; i < this.enter_arr[0].length; i++) {
-            System.out.print(this.enter_arr[0][i] + " ");
+        if (enter_arr[0].length > 1){
+            System.out.print("Слова отсортированные по их длине: ");
+            for (byte i = 0; i < this.enter_arr[0].length; i++) {
+                System.out.print(this.enter_arr[0][i] + " ");
+            }
+        }
+        else{
+            System.out.println("Вы ничего не ввели");
         }
         System.out.println();
     }
